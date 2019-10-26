@@ -1,3 +1,47 @@
+
+ /* These classes can be added to HTML Elements
+   * to affect visibility on certain displays.
+   */
+   .hide-on-small-only
+   .hide-on-small-and-down
+   .hide-on-med-and-down
+   .hide-on-med-and-up
+   .hide-on-med-only
+   .hide-on-large-only
+   .show-on-large
+   .show-on-medium
+   .show-on-small
+   .show-on-medium-and-up
+   .show-on-medium-and-down
+
+   /* label color */
+   .input-field label {
+    color: #000;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #000;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #000;
+  }
+
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
@@ -11,10 +55,16 @@ body {
 }
 
 
-
-@media screen and (min-width: 800px) {
-  .row {
-    background-color: bisque;
+p {
+  font-size: 20px;
+  margin-left: 10px;
+}
+row {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 601px) {
+  p {
+    font-size: 30px;
   }
 }
 
